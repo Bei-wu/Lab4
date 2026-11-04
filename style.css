@@ -1,0 +1,167 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #10172b;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Title Area */
+
+.header {
+    background-color: #232b50;
+    border: 2px solid #7485cc;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 42px;
+    color: white;
+    margin: 5px 0 10px;
+}
+
+.header p {
+    font-size: 18px;
+    color: #cbd5ff;
+    margin: 0;
+}
+
+/* Game Image */
+
+.game {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border: 3px solid #7485cc;
+    border-radius: 12px;
+    background-color: #222a45;
+}
+
+#gameImage {
+    display: block;
+    width: 100%;
+    height: 65vh;
+    min-height: 350px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Controls Inside Image */
+
+.gameControls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 15px;
+    background-color: rgba(12, 18, 40, 0.85);
+}
+
+#message {
+    font-size: 20px;
+    color: white;
+    margin: 0 0 20px;
+}
+
+/* Main Buttons */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.buttons button {
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    background-color: #5265b5;
+    border: 2px solid #a2b2ff;
+    border-radius: 8px;
+    padding: 14px 28px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #7588dc;
+}
+
+.buttons button:active {
+    background-color: #394b92;
+}
+
+/* Restart Button */
+
+#restartButton {
+    display: block;
+    margin: 20px auto;
+    padding: 8px 18px;
+    font-size: 13px;
+    color: #cbd5ff;
+    background-color: #232b50;
+    border: 1px solid #7485cc;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#restartButton:hover {
+    background-color: #39456d;
+}
+
+/* Mobile Screen */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .header p {
+        font-size: 15px;
+    }
+
+    #gameImage {
+        height: 65vh;
+        min-height: 400px;
+    }
+
+    .gameControls {
+        padding: 15px 8px;
+    }
+
+    #message {
+        font-size: 16px;
+    }
+
+    .buttons {
+        gap: 5px;
+    }
+
+    .buttons button {
+        font-size: 12px;
+        padding: 10px 8px;
+    }
+}

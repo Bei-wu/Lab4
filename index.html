@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Room</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Escape Room</h1>
+            <p>Find a way to escape the room!</p>
+        </div>
+
+        <div class="game">
+
+            <img id="gameImage" src="locked.png" alt="Escape Room">
+
+            <div class="gameControls">
+
+                <p id="message">
+                    You are locked in a room. What will you do?
+                </p>
+
+                <div class="buttons">
+                    <button onclick="findKey()">Find Key</button>
+                    <button onclick="searchRoom()">Search Room</button>
+                    <button onclick="openDoor()">Open Door</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <button id="restartButton" onclick="restart()">
+            Restart
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
